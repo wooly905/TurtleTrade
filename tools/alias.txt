@@ -1,0 +1,15 @@
+root    pushd "%turtleRoot%"
+src     pushd "%turtleSource%"
+tools   pushd "%turtleTools%"
+
+up      pushd ..\$*
+up1     pushd ..\$*
+up2     pushd ..\..\$*
+up3     pushd ..\..\..\$*
+
+dev	devenv $*
+t3	devenv "%turtleRoot%\T3.sln"
+build	dotnet build "%turtleRoot%\T3.sln" /p:Configuration=Debug
+gensol	msbuild $* /t:generatesolution
+..	cd ..
+...	cd .. & cd ..

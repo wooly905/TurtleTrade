@@ -1,0 +1,38 @@
+{
+  "TradingTimes": [
+    {
+      "Country": "TW",
+      "TradingStartTime": "9:00",
+      "TradingEndTime": "13:30",
+      "DailyPriceImportTime": "14:00",
+      "HistoricalPriceImportTime": "10:00"
+    },
+    {
+      "Country": "US",
+      "TradingStartTime": "9:30",
+      "TradingEndTime": "16:00",
+      "DailyPriceImportTime": "16:30",
+      "HistoricalPriceImportTime": "10:00"
+    },
+    {
+      "Country": "HK",
+      "TradingStartTime": "9:30",
+      "TradingEndTime": "16:00",
+      "DailyPriceImportTime": "16:30",
+      "HistoricalPriceImportTime": "10:00"
+    }
+  ],
+
+  "SystemInfo": {
+    "AdminEmail": "bruceyclee@gmail.com",
+    "ProductionTurtleDBConnectionString": "Server=tcp:dwyrewg4i4.database.windows.net,1433;Initial Catalog=TurtleData;User ID=turtle01;Password=MERmaid2!!;",
+    "TestTurtleDBConnectionString": "Server=tcp:dwyrewg4i4.database.windows.net,1433;Initial Catalog=TurtleDataTest;User ID=turtle01;Password=MERmaid2!!;"
+  },
+
+  "SMTPInfo": {
+    "SenderEmail": "smallturtle168@gmail.com",
+    "SenderPassword": "MERmaid2!!",
+    "SMTPServer": "smtp.gmail.com",
+    "SMTPTCPPort": "587"
+  }
+}
